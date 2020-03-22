@@ -1,6 +1,9 @@
 const express = require('express')
-
+const connectDB = require('./helper/db')
 const app = express()
+
+// Connect Database
+connectDB()
 
 app.get('/', (req, res) => {
   res.send('API RUNNING')
