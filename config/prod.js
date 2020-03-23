@@ -1,4 +1,6 @@
 module.exports = {
   mongoURL: process.env.MONGO_URI,
-  jwtSecret: process.env.JWT_SECRET
+  jwtSecret: process.env.JWT_SECRET,
+  githubCliendId: process.env.githubCliendId,
+  githubCliendSecret: process.env.githubCliendSecret
 }
