@@ -1,12 +1,12 @@
 const express = require('express')
+const router = express.Router()
+
 const normalize = require('normalize-url')
 const request = require('request')
 const { check, validationResult } = require('express-validator')
-const router = express.Router()
 
 const auth = require('../../middleware/auth')
 const config = require('../../config/keys')
-
 const Profile = require('../../models/Profile')
 const User = require('../../models/User')
 
