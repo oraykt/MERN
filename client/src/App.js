@@ -9,7 +9,7 @@ import Alert from './components/layout/Alert'
 //Redux
 import { Provider } from 'react-redux'
 import store from './store'
-import { loadUser } from './actions/auth'
+import { loadUser, logout } from './actions/auth'
 import setAuthToken from './utils/setAuthToken'
 
 import './App.css'
@@ -19,6 +19,9 @@ const App = () => {
     if (localStorage.token) {
       setAuthToken(localStorage.token)
       store.dispatch(loadUser())
+    } else {
+      // Added temporary
+      store.dispatch(logout())
     }
   }, [])
   return (
