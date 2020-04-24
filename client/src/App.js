@@ -11,7 +11,7 @@ import PrivateRoute from './components/routing/PrivateRoute'
 //Redux
 import { Provider } from 'react-redux'
 import store from './store'
-import { loadUser, logout } from './actions/auth'
+import { loadUser } from './actions/auth'
 import setAuthToken from './utils/setAuthToken'
 
 import './App.css'
@@ -21,8 +21,6 @@ const App = () => {
     if (localStorage.token) {
       setAuthToken(localStorage.token)
       store.dispatch(loadUser())
-    } else {
-      store.dispatch(logout())
     }
   }, [])
   return (
