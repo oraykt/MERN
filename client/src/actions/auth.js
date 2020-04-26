@@ -10,7 +10,7 @@ import {
   LOG_OUT,
   CLEAR_PROFILE,
 } from './types'
-import setAuthToken from '../utils/setAuthToken'
+
 // Register User
 export const register = ({ name, email, password }) => async (dispatch) => {
   const config = {
