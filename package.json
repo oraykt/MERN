@@ -8,7 +8,7 @@
     "client": "yarn --cwd client start",
     "server": "nodemon server",
     "dev": "concurrently \"yarn server\" \"yarn client\"",
-    "heroku-postbuild": "yarn --cwd client install && yarn --cwd client build ",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false && yarn --cwd client install && yarn --cwd client build ",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
