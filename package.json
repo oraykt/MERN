@@ -31,7 +31,7 @@
     "mongoose": "^5.9.5",
     "normalize-url": "^5.0.0",
     "request": "^2.88.2",
-    "validator": "^13.0.0"
+    "validator": "^13.7.0"
   },
   "devDependencies": {
     "concurrently": "^5.1.0",
